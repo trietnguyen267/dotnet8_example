@@ -6,6 +6,7 @@ namespace MyFirstApi.Services
     {
         private static readonly List<Post> AllPosts = [];
         public Task CreatePost(Post item){
+            
             AllPosts.Add(item);
             return Task.CompletedTask;
         }
